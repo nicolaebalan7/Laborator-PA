@@ -4,8 +4,6 @@
 
 void ruleazaPentruN(int n)
 {
-    cout << "\n=== n = " << n << " ===" << endl;
-
     int *a = new int[n];
     for(int i = 0; i < n; i++) a[i] = rand();
 
