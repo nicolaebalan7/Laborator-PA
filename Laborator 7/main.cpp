@@ -37,7 +37,13 @@ int main()
     int w[]={3, 5, 6};
     int p[]={10, 30, 20};
     int M=10, n=3;
-    memset(dp, -1, sizeof(dp));
+    for(int i = 0; i <= n; i++) 
+    {
+        for(int j = 0; j <= M; j++) 
+        {
+            dp[i][j] = -1;
+        }
+    }
     int rez = rucsac2(n, M, w, p);
     cout<<rez;
     return 0;
