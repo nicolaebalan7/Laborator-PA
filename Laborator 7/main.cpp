@@ -26,7 +26,7 @@ int rucsac2(int n, int M, int w[], int p[])
         return -100;
     if(dp[n][M] !=- 1)
         return dp[n][M];
-    int st = rucsac2(n-1,M,w,p);
+    int st = rucsac2(n-1, M, w, p);
     int dr = rucsac2(n-1, M-w[n-1], w, p) + p[n-1];
     dp[n][M] = maxim(st,dr);
     return dp[n][M];
